@@ -374,3 +374,10 @@ const bills = [
 ];
 
 // Start coding here
+let totalbill =bills.reduce((acc, curr) => {
+  return acc + curr.total;
+}, 0);
+
+console.log(`Total bill transection is ${totalbill}`);
+
+
