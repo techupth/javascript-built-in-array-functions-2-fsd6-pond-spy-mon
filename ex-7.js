@@ -1,5 +1,14 @@
+// function isPalindrome(string) {
+//   // Start coding here
+//   let check = string.toLowerCase()
+//   let checkString = check.split('').reverse().join('')
+
+//   return check === checkString  
+// }
+
+
 function isPalindrome(string) {
-  // Start coding here
+  return string.trim() == string.split("").reverse().join("");
 }
 
 //Example case
