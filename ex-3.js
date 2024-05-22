@@ -373,5 +373,15 @@ const bills = [
   },
 ];
 
-// Start coding here
-const billMembers;
+
+function filterNull(nullMember) {
+  return nullMember.member !== null 
+}
+
+function selectName(items) {
+  return items.member.name
+}
+
+const billMembers = bills.filter(filterNull).map(selectName)
+
+console.log(billMembers)
