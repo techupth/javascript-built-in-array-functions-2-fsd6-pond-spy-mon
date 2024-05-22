@@ -1,7 +1,20 @@
 let crimeRecordNames = ["Theodora Milenko", "Tinashe Benigno", "Mahalia Priyanka", "Maisy Sudhir"];
 
-function searchCrimeRecord(name) {
-  // Start coding here
+// function searchCrimeRecord(name) {
+//   // Start coding here
+//   if (crimeRecordNames.includes(name)) {
+//     return `${name} has crime record !!!`;
+//   } else {
+//     return `${name} has no crime record`;
+//   }
+// }
+
+function searchCrimeRecord(crimeRecordNames) {
+  if (crimeRecordNames === true) {
+      return `${crimeRecordNames} has crime record !!!`;
+  } else {
+      return `${crimeRecordNames} has no crime record`;
+  }
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
@@ -10,3 +23,6 @@ console.log(searchCrimeRecord("Dilan Sandra")); //"Dilan Sandra has no crime rec
 
 //ในกรณีที่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Tinashe Benigno")); //"Tinashe Benigno has crime record !!!"
+
+
+// 1. if else 
